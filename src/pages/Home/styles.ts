@@ -144,6 +144,10 @@ export const ListContent = styled.div`
 
       @media screen and (max-width: 1000px) {
         padding: 0 22px;
+
+        div:last-of-type {
+          width: 130px;
+        }
       }
 
       &:nth-of-type(2) {
