@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-import illustrationTop from '../../assets/Illustration-top.png';
+import illustrationTop from '../../assets/Illustration-top.svg';
 
 import { Container, ContentWrapper, DescriptionContent } from './styles';
 
