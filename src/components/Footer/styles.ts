@@ -10,7 +10,11 @@ import {
 
 export const Container = styled.footer`
   background: ${LIGHT_COLOR_4};
-  padding: 100px 0;
+  padding: 100px 22px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 50px 22px;
+  }
 
   > div {
     width: 100%;
@@ -19,12 +23,26 @@ export const Container = styled.footer`
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 75px;
+    }
+
+    @media screen and (max-width: 830px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 
 export const SocialContent = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 830px) {
+    margin-bottom: 75px;
+  }
 
   > img {
     width: 122px;
@@ -43,6 +61,10 @@ export const SocialContent = styled.div`
   > div {
     display: flex;
     margin-top: 80px;
+
+    @media screen and (max-width: 830px) {
+      margin-top: 20px;
+    }
   }
 
   a {
@@ -81,8 +103,19 @@ export const SiteMapListContent = styled.ul`
   justify-content: space-between;
   list-style: none;
 
+  @media screen and (max-width: 620px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   div + div {
     margin-left: 81px;
+
+    @media screen and (max-width: 620px) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
   }
 
   strong {
@@ -91,6 +124,16 @@ export const SiteMapListContent = styled.ul`
     font-weight: 500;
     line-height: 30px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 620px) {
+      text-align: center;
+    }
+  }
+
+  li {
+    @media screen and (max-width: 620px) {
+      text-align: center;
+    }
   }
 
   li + li {
