@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 
 import logo from '../../assets/logo.png';
 
-import { Container } from './styles';
+import { Container, HamburguerIcon } from './styles';
 
 const Header: React.FC = () => {
+  const [menuMobileIsOpen, setMenuMobileIsOpen] = useState(false);
+
+  const toggleMenuMobile = useCallback(() => {
+    setMenuMobileIsOpen(state => !state);
+  }, []);
+
   return (
-    <Container>
+    <Container menuIsOpen={menuMobileIsOpen}>
       <img src={logo} alt="Loocal" />
 
       <nav>
+        <button type="button" onClick={toggleMenuMobile}>
+          <HamburguerIcon menuIsOpen={menuMobileIsOpen} />
+        </button>
+
         <ul>
           <li>
             <a href="https://brilliant.org/">Sobre</a>

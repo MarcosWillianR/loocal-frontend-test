@@ -16,6 +16,7 @@ export const ContentWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  padding: 0 22px;
   justify-content: space-between;
   margin-top: 150px;
 
