@@ -247,6 +247,11 @@ export const DragSectionContainer = styled.div`
   background: ${LIGHT_COLOR_3};
   margin-top: 150px;
   padding: 100px 0;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: 75px;
+    padding: 0 22px;
+  }
 `;
 
 export const DragSectionDescription = styled.div`
@@ -262,6 +267,11 @@ export const DragSectionDescription = styled.div`
     font-size: 35px;
     line-height: 50px;
     font-weight: 500;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 27px;
+      line-height: 40px;
+    }
   }
 
   p {
@@ -269,6 +279,10 @@ export const DragSectionDescription = styled.div`
     line-height: 30px;
     margin: 20px 0 60px 0;
     color: ${DARK_GREY_COLOR};
+
+    @media screen and (max-width: 1000px) {
+      margin: 20px 0 30px 0;
+    }
   }
 `;
 
