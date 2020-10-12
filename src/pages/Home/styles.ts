@@ -73,6 +73,11 @@ export const DescriptionContent = styled.div`
       line-height: 60px;
       text-align: center;
     }
+
+    @media screen and (max-width: 620px) {
+      font-size: 34px;
+      line-height: 50px;
+    }
   }
 
   p {
@@ -107,6 +112,10 @@ export const DescriptionContent = styled.div`
 
     @media screen and (max-width: 1000px) {
       max-width: 250px;
+    }
+
+    @media screen and (max-width: 620px) {
+      padding: 18px 27.5px;
     }
   }
 `;
@@ -230,6 +239,10 @@ export const MiddleSectionList = styled.div`
     @media screen and (max-width: 1000px) {
       text-align: center;
     }
+
+    @media screen and (max-width: 620px) {
+      margin-bottom: 32px;
+    }
   }
 
   ul {
@@ -240,14 +253,26 @@ export const MiddleSectionList = styled.div`
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 620px) {
+        flex-direction: column;
+      }
+
       img {
         margin-right: 12px;
+
+        @media screen and (max-width: 620px) {
+          margin-right: 0;
+        }
       }
 
       p {
         font-size: 14px;
         line-height: 30px;
         color: ${DARK_GREY_COLOR};
+
+        @media screen and (max-width: 620px) {
+          max-width: 200px;
+        }
       }
     }
   }
@@ -363,6 +388,10 @@ export const ActionContent = styled.div`
     @media screen and (max-width: 830px) {
       margin-top: 30px;
       min-width: 250px;
+    }
+
+    @media screen and (max-width: 620px) {
+      padding: 18px 27.5px;
     }
   }
 `;
