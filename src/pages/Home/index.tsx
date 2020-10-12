@@ -3,15 +3,18 @@ import React from 'react';
 import Header from '../../components/Header';
 
 import illustrationTop from '../../assets/Illustration-top.svg';
+import illustrationMiddle from '../../assets/Illustration-middle.svg';
 import server from '../../assets/icons/server.svg';
 import mapPin from '../../assets/icons/mapPin.svg';
 import user from '../../assets/icons/user.svg';
+import check from '../../assets/icons/check.svg';
 
 import {
   Container,
   ContentWrapper,
   DescriptionContent,
   ListContent,
+  MiddleSectionList,
 } from './styles';
 
 const Home: React.FC = () => {
@@ -35,7 +38,11 @@ const Home: React.FC = () => {
           <button type="button">Entre em contato</button>
         </DescriptionContent>
 
-        <img src={illustrationTop} alt="ilustração - pessoa com notebook" />
+        <img
+          src={illustrationTop}
+          alt="ilustração - pessoa com notebook"
+          className="illustration-top"
+        />
       </ContentWrapper>
 
       <ListContent>
@@ -72,6 +79,43 @@ const Home: React.FC = () => {
           </li>
         </ul>
       </ListContent>
+
+      <ContentWrapper>
+        <img
+          src={illustrationMiddle}
+          alt="ilustração - pessoa com notebook interagindo"
+          className="illustration-middle"
+        />
+
+        <MiddleSectionList>
+          <h1>
+            Gerencie as entregas
+            <br />
+            do seu comércio
+          </h1>
+
+          <p>Com a Loocal você possui total controle sobre suas entregas</p>
+
+          <ul>
+            <li>
+              <img src={check} alt="check item" />
+              <p>Insira créditos na plataforma de modo pré-pago</p>
+            </li>
+            <li>
+              <img src={check} alt="check item" />
+              <p>Entregadores segmentados por região</p>
+            </li>
+            <li>
+              <img src={check} alt="check item" />
+              <p>Dashboard completa com métricas sobre vendas</p>
+            </li>
+            <li>
+              <img src={check} alt="check item" />
+              <p>Acompanhamento em tempo real do seu pedido</p>
+            </li>
+          </ul>
+        </MiddleSectionList>
+      </ContentWrapper>
     </Container>
   );
 };

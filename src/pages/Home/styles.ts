@@ -15,11 +15,12 @@ export const ContentWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  margin-top: 100px;
+  justify-content: space-between;
+  margin-top: 150px;
 
-  img {
+  img.illustration-top {
     position: relative;
-    left: 100px;
+    left: 50px;
     top: 30px;
   }
 `;
@@ -62,7 +63,7 @@ export const DescriptionContent = styled.div`
 export const ListContent = styled.div`
   width: 100%;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 150px auto 0 auto;
 
   background: #fff;
   box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
@@ -105,6 +106,41 @@ export const ListContent = styled.div`
         font-size: 20px;
         line-height: 30px;
         font-weight: 400;
+        color: ${DARK_GREY_COLOR};
+      }
+    }
+  }
+`;
+
+export const MiddleSectionList = styled.div`
+  h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+
+  p {
+    margin: 15px 0;
+    max-width: 400px;
+    font-weight: 400;
+    line-height: 30px;
+    color: ${DARK_GREY_COLOR};
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 30px;
         color: ${DARK_GREY_COLOR};
       }
     }
