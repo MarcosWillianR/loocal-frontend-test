@@ -17,6 +17,7 @@ import {
   MiddleSectionList,
   DragSectionContainer,
   DragSectionDescription,
+  ActionContent,
 } from './styles';
 
 const Home: React.FC = () => {
@@ -133,6 +134,20 @@ const Home: React.FC = () => {
           </p>
         </DragSectionDescription>
       </DragSectionContainer>
+
+      <ActionContent>
+        <div>
+          <h2>
+            Faça parte da
+            <br />
+            revolução 🎉
+          </h2>
+
+          <p>Traga seu comércio para a Loocal</p>
+        </div>
+
+        <button type="button">Quero fazer parte</button>
+      </ActionContent>
     </Container>
   );
 };

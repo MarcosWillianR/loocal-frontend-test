@@ -176,3 +176,48 @@ export const DragSectionDescription = styled.div`
     color: ${DARK_GREY_COLOR};
   }
 `;
+
+export const ActionContent = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 150px auto 0 auto;
+
+  background: #fff;
+  box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
+  padding: 42px 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  p {
+    color: ${DARK_GREY_COLOR};
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  button {
+    min-width: 373px;
+    background: ${MAIN_COLOR};
+    border-radius: 10px;
+    padding: 18px 55px;
+    border: 0;
+
+    color: ${LIGHT_COLOR_1};
+    font-weight: 700;
+    line-height: 25px;
+
+    box-shadow: 0px 10px 20px 0px rgba(0, 165, 54, 0.3);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: ${lighten(0.015, MAIN_COLOR)};
+    }
+  }
+`;
