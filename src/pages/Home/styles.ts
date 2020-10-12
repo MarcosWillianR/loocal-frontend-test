@@ -186,6 +186,11 @@ export const ListContent = styled.div`
         font-size: 25px;
         font-weight: 700;
         line-height: 30px;
+
+        @media screen and (max-width: 1000px) {
+          font-size: 20px;
+          line-height: 25px;
+        }
       }
 
       span {
@@ -194,6 +199,11 @@ export const ListContent = styled.div`
         line-height: 30px;
         font-weight: 400;
         color: ${DARK_GREY_COLOR};
+
+        @media screen and (max-width: 1000px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
   }
