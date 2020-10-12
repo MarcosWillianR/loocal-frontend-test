@@ -108,23 +108,55 @@ export const ListContent = styled.div`
   max-width: 1200px;
   margin: 150px auto 0 auto;
 
+  @media screen and (max-width: 1000px) {
+    max-width: 400px;
+    margin-top: 75px;
+  }
+
   background: #fff;
   box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
   padding: 42px 70px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 42px 22px;
+  }
 
   ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+
     li {
       display: flex;
+      padding: 0 22px;
+
+      @media screen and (max-width: 1000px) {
+        padding: 0 22px;
+      }
 
       &:nth-of-type(2) {
         border-left: 2px solid #eeeff2;
         border-right: 2px solid #eeeff2;
         margin: 0 90px;
         padding: 28px 90px;
+
+        @media screen and (max-width: 1200px) and (min-width: 1001px) {
+          padding: 0 60px;
+          margin: 0 60px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          padding: 42px 22px;
+          margin: 42px 0;
+          border: 0;
+
+          border-top: 2px solid #eeeff2;
+          border-bottom: 2px solid #eeeff2;
+        }
       }
 
       div:first-of-type {
