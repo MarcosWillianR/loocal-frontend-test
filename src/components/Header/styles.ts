@@ -5,7 +5,7 @@ import { DARK_GREY_COLOR, MAIN_COLOR } from '../../styles/variables';
 
 export const Container = styled.header`
   width: 100%;
-  max-width: 920px;
+  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
