@@ -25,16 +25,20 @@ export const ContentWrapper = styled.div`
     margin-top: 75px;
   }
 
-  img.illustration-top {
+  img.illustration-top,
+  img.illustration-middle {
     position: relative;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  img.illustration-top {
     top: 30px;
 
     @media screen and (min-width: 1300px) {
       left: 50px;
-    }
-
-    @media screen and (max-width: 1000px) {
-      display: none;
     }
 
     @media screen and (max-width: 1181px) and (min-width: 1001px) {
@@ -44,6 +48,10 @@ export const ContentWrapper = styled.div`
     @media screen and (max-width: 1189px) and (min-width: 1182px) {
       top: -20px;
     }
+  }
+
+  img.illustration-middle {
+    right: 30px;
   }
 `;
 
@@ -189,9 +197,13 @@ export const ListContent = styled.div`
 
 export const MiddleSectionList = styled.div`
   h1 {
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 40px;
+
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
   }
 
   p {
@@ -200,10 +212,15 @@ export const MiddleSectionList = styled.div`
     font-weight: 400;
     line-height: 30px;
     color: ${DARK_GREY_COLOR};
+
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
   }
 
   ul {
     list-style: none;
+    margin: 0 22px;
 
     li {
       display: flex;
