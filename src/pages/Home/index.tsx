@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import illustrationTop from '../../assets/Illustration-top.svg';
 import illustrationMiddle from '../../assets/Illustration-middle.svg';
@@ -148,6 +149,8 @@ const Home: React.FC = () => {
 
         <button type="button">Quero fazer parte</button>
       </ActionContent>
+
+      <Footer />
     </Container>
   );
 };

@@ -181,6 +181,8 @@ export const ActionContent = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 150px auto 0 auto;
+  position: relative;
+  top: 112px;
 
   background: #fff;
   box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
