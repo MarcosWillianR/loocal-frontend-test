@@ -15,6 +15,8 @@ import {
   DescriptionContent,
   ListContent,
   MiddleSectionList,
+  DragSectionContainer,
+  DragSectionDescription,
 } from './styles';
 
 const Home: React.FC = () => {
@@ -116,6 +118,21 @@ const Home: React.FC = () => {
           </ul>
         </MiddleSectionList>
       </ContentWrapper>
+
+      <DragSectionContainer>
+        <DragSectionDescription>
+          <h1>
+            Utilizada por centenas de
+            <br />
+            empreendedores 👀
+          </h1>
+
+          <p>
+            Veja alguns depoimentos de comerciantes que utilizam a Loocal para
+            gerenciar as demandas de entregas dos seus estabelecimentos
+          </p>
+        </DragSectionDescription>
+      </DragSectionContainer>
     </Container>
   );
 };

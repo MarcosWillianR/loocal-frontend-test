@@ -6,6 +6,7 @@ import {
   MAIN_COLOR,
   MAIN_COLOR_LIGHT,
   LIGHT_COLOR_1,
+  LIGHT_COLOR_3,
 } from '../../styles/variables';
 
 export const Container = styled.div``;
@@ -144,5 +145,34 @@ export const MiddleSectionList = styled.div`
         color: ${DARK_GREY_COLOR};
       }
     }
+  }
+`;
+
+export const DragSectionContainer = styled.div`
+  background: ${LIGHT_COLOR_3};
+  margin-top: 150px;
+  padding: 100px 0;
+`;
+
+export const DragSectionDescription = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+
+  p {
+    max-width: 550px;
+    line-height: 30px;
+    margin: 20px 0 60px 0;
+    color: ${DARK_GREY_COLOR};
   }
 `;
