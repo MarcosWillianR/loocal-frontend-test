@@ -20,18 +20,51 @@ export const ContentWrapper = styled.div`
   justify-content: space-between;
   margin-top: 150px;
 
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+    margin-top: 75px;
+  }
+
   img.illustration-top {
     position: relative;
-    left: 50px;
     top: 30px;
+
+    @media screen and (min-width: 1300px) {
+      left: 50px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1181px) and (min-width: 1001px) {
+      top: -70px;
+    }
+
+    @media screen and (max-width: 1189px) and (min-width: 1182px) {
+      top: -20px;
+    }
   }
 `;
 
 export const DescriptionContent = styled.div`
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   h1 {
     font-size: 50px;
     font-weight: 500;
     line-height: 70px;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 42px;
+      line-height: 60px;
+      text-align: center;
+    }
   }
 
   p {
@@ -40,6 +73,10 @@ export const DescriptionContent = styled.div`
     font-weight: 400;
     line-height: 30px;
     color: ${DARK_GREY_COLOR};
+
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
   }
 
   button {
@@ -58,6 +95,10 @@ export const DescriptionContent = styled.div`
 
     &:hover {
       background: ${lighten(0.015, MAIN_COLOR)};
+    }
+
+    @media screen and (max-width: 1000px) {
+      max-width: 250px;
     }
   }
 `;
