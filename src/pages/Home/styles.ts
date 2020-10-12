@@ -303,6 +303,11 @@ export const ActionContent = styled.div`
   position: relative;
   top: 112px;
 
+  @media screen and (max-width: 1000px) {
+    margin: 75px auto 0 auto;
+    top: 0;
+  }
+
   background: #fff;
   box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
   padding: 42px 70px;
@@ -311,16 +316,30 @@ export const ActionContent = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
+  }
+
   h2 {
     font-weight: 500;
     font-size: 35px;
     line-height: 45px;
+
+    @media screen and (max-width: 830px) {
+      font-size: 27px;
+      line-height: 40px;
+      text-align: center;
+    }
   }
 
   p {
     color: ${DARK_GREY_COLOR};
     line-height: 30px;
     margin-top: 20px;
+
+    @media screen and (max-width: 830px) {
+      text-align: center;
+    }
   }
 
   button {
@@ -339,6 +358,11 @@ export const ActionContent = styled.div`
 
     &:hover {
       background: ${lighten(0.015, MAIN_COLOR)};
+    }
+
+    @media screen and (max-width: 830px) {
+      margin-top: 30px;
+      min-width: 250px;
     }
   }
 `;
