@@ -4,6 +4,7 @@ import { lighten } from 'polished';
 import {
   DARK_GREY_COLOR,
   MAIN_COLOR,
+  MAIN_COLOR_LIGHT,
   LIGHT_COLOR_1,
 } from '../../styles/variables';
 
@@ -54,6 +55,58 @@ export const DescriptionContent = styled.div`
 
     &:hover {
       background: ${lighten(0.015, MAIN_COLOR)};
+    }
+  }
+`;
+
+export const ListContent = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+
+  background: #fff;
+  box-shadow: 0px 20px 30px 0px rgba(11, 19, 42, 0.1);
+  padding: 42px 70px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: flex;
+
+      &:nth-of-type(2) {
+        border-left: 2px solid #eeeff2;
+        border-right: 2px solid #eeeff2;
+        margin: 0 90px;
+        padding: 28px 90px;
+      }
+
+      div:first-of-type {
+        margin-right: 36.5px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: ${MAIN_COLOR_LIGHT};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      strong {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+
+      span {
+        display: block;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        color: ${DARK_GREY_COLOR};
+      }
     }
   }
 `;
