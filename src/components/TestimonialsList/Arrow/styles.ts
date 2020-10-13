@@ -27,6 +27,7 @@ export const Container = styled.button`
   @media screen and (max-width: 1000px) {
     width: 40px;
     height: 40px;
+    margin-left: 0;
 
     svg {
       width: 18px;

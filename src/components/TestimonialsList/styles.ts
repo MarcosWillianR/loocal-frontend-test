@@ -43,8 +43,18 @@ export const Container = styled.div`
     &:first-of-type {
       right: 80px;
 
+      @media screen and (max-width: 1230px) and (min-width: 1001px) {
+        right: 102px;
+      }
+
       @media screen and (max-width: 1000px) {
         right: 50px;
+      }
+    }
+
+    &:last-of-type {
+      @media screen and (max-width: 1230px) and (min-width: 1001px) {
+        margin-right: 22px;
       }
     }
   }
