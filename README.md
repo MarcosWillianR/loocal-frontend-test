@@ -1,3 +1,12 @@
+<h1 align="center">
+    <img alt="Loocal" title="#Loocal" src="src/assets/logo.png" width="180" height="65" />
+</h1>
+
+<p align="center">
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-autor">Autor</a> •
+ <a target="_blank" href="https://awesome-jackson-43f9c7.netlify.app/">Acessar o projeto pelo Netlify</a>
+</p>
 
 <p align="center">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/MarcosWillianR/loocal-frontend-test">
@@ -18,18 +27,6 @@
     <img alt="Feito por Marcos Willian" src="http://img.shields.io/badge/feito%20por-Marcos%20Willian-%117EFF">
   </a>
 </p>
-
-<h1 align="center">
-    <img alt="Loocal" title="#Loocal" src="src/assets/logo.png" width="180" height="65" />
-</h1>
-
-<p align="center">
- <a href="#-tecnologias">Tecnologias</a> •
- <a href="#-autor">Autor</a> •
- <a target="_blank" href="https://awesome-jackson-43f9c7.netlify.app/">Acessar o projeto pelo Netlify</a>
-</p>
-
-### Web Responsivo
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="Loocal" src="src/assets/README/desktop-and-mobile.svg" width="1000px">
