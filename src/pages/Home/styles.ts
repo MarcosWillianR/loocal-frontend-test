@@ -247,7 +247,6 @@ export const MiddleSectionList = styled.div`
 
   ul {
     list-style: none;
-    margin: 0 22px;
 
     li {
       display: flex;
