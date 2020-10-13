@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import TestimonialsList from '../../components/TestimonialsList';
 
 import illustrationTop from '../../assets/Illustration-top.svg';
 import illustrationMiddle from '../../assets/Illustration-middle.svg';
@@ -134,6 +135,8 @@ const Home: React.FC = () => {
             gerenciar as demandas de entregas dos seus estabelecimentos
           </p>
         </DragSectionDescription>
+
+        <TestimonialsList />
       </DragSectionContainer>
 
       <ActionContent>
