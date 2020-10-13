@@ -47,6 +47,10 @@ export const SocialContent = styled.div`
   > img {
     width: 122px;
     height: 47px;
+
+    @media screen and (max-width: 830px) {
+      margin-left: 10px;
+    }
   }
 
   small {

@@ -324,7 +324,7 @@ export const DragSectionDescription = styled.div`
 export const ActionContent = styled.div`
   width: 100%;
   max-width: 1200px;
-  margin: 150px auto 0 auto;
+  margin: 100px auto 0 auto;
   position: relative;
   top: 112px;
 
