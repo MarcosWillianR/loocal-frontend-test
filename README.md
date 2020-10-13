@@ -32,18 +32,7 @@
 ### Web Responsivo
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Loocal" src="src/assets/README/first-desktop.png" width="800px">
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Loocal" src="src/assets/README/desktop1.gif" width="400px" height="200px">
-  <img alt="Loocal" src="src/assets/README/desktop-testimonials-list.gif" width="400px" height="200px">
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img style="border-right: 1px solid #4F5665;" alt="Loocal" src="src/assets/README/mobile1.png" width="266.66px">
-  <img style="border-right: 1px solid #4F5665;" alt="Loocal" src="src/assets/README/mobile2.png" width="266.66px">
-  <img alt="Loocal" src="src/assets/README/mobile3.png" width="266.66px">
+  <img alt="Loocal" src="src/assets/README/desktop-and-mobile.svg" width="1000px">
 </p>
 
 
