@@ -41,7 +41,8 @@ export const SocialContent = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 830px) {
-    margin-bottom: 75px;
+    margin-top: 75px;
+    order: 2;
   }
 
   > img {
@@ -106,6 +107,10 @@ export const SiteMapListContent = styled.ul`
   display: flex;
   justify-content: space-between;
   list-style: none;
+
+  @media screen and (max-width: 830px) {
+    order: 1;
+  }
 
   @media screen and (max-width: 620px) {
     justify-content: center;
