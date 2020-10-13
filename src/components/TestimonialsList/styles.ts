@@ -16,6 +16,7 @@ export const Container = styled.div`
 
   div.menu-item-wrapper {
     padding-right: 50px;
+    cursor: grab;
 
     @media screen and (max-width: 530px) {
       padding-right: 25px;
